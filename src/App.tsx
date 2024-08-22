@@ -15,6 +15,7 @@ const App = () => {
         <Input type='number' placeholder='Enter your name'/>
         <div className='flex items-center gap-2'>
           <CheckBox type="checkbox">I agree with <strong>terms</strong> and <strong>plicies</strong>.</CheckBox>
+          <CheckBox type="checkbox">I agree with <strong>terms</strong> and <strong>plicies</strong>.</CheckBox>
 
         </div>
       </div>  
