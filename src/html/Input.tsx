@@ -1,13 +1,14 @@
-const Input = ({
-  className,
-  children,
-}:{
-  className:string;
-  children: React.ReactNode;
-}) => {
+type TInputProps = React.ComponentPropsWithoutRef<"input">;
+
+const Input = (props: TInputProps) => {
+  const {...rest} = props;
   return (
     <>
-      <input className={`${className} m-auto text-xs w-52 h-8`} type="text"  placeholder={`${children}`}/>
+      <input 
+        className='inter text-sm border border-[#4f4f4f] py-[13.5px] px-[16px] 
+        rounded-lg placeholder-[#acacac]'
+        {...rest}
+      />
     </>
   )
 }
