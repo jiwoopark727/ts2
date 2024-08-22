@@ -20,7 +20,7 @@
 
 import { useId } from "react";
 
-type TCheckBoxProps = Omit<React.ComponentPropsWithoutRef<"input">, "type"> & {
+type TCheckBoxProps = Omit<React.ComponentPropsWithoutRef<"input">, "type" | "id"> & {
   type: "checkbox";
 }
 
