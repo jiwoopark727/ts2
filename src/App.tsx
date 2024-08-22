@@ -1,6 +1,6 @@
 import Button from './html/Button'
 import Input from './html/Input'
-import CheckBox from './html/CheckBox'
+// import CheckBox from './html/CheckBox'
 
 const App = () => {
   return (
