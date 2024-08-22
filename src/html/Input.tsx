@@ -1,4 +1,6 @@
-type TInputProps = React.ComponentPropsWithoutRef<"input">;
+type TInputProps = Omit<React.ComponentPropsWithoutRef<"input">, "type"> & { 
+  type: "text" | "password" | "email" | "number" | "date" 
+};
 
 const Input = (props: TInputProps) => {
   const {...rest} = props;

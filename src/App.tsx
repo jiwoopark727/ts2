@@ -1,6 +1,6 @@
 import Button from './html/Button'
 import Input from './html/Input'
-// import CheckBox from './html/CheckBox'
+import CheckBox from './html/CheckBox'
 
 const App = () => {
   return (
@@ -13,6 +13,10 @@ const App = () => {
         <Input type='text' placeholder='Enter your name'/>
         <Input type='password' placeholder='Enter your name'/>
         <Input type='number' placeholder='Enter your name'/>
+        <div className='flex items-center gap-2'>
+          <CheckBox type="checkbox">I agree with <strong>terms</strong> and <strong>plicies</strong>.</CheckBox>
+
+        </div>
       </div>  
     </>
   )
