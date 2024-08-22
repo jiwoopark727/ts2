@@ -1,3 +1,28 @@
+import picture from './assets/images/1.jpg'
+
+const App = () => {
+  return (
+    <>
+      <div>App Component</div>
+      {/* src하위에 넣을 때 */}
+      <img src={picture} alt="" />
+      {/* pulic 폴더에 있는거 쓸 때 */}
+      <img src="/1.jpg" alt="" />
+    </>
+  )
+}
+export default App;
+
+
+
+
+
+
+
+
+
+
+
 // import Button from './html/Button'
 // import Input from './html/Input'
 // import CheckBox from './html/CheckBox'
@@ -36,18 +61,17 @@
 // }
 // export default App;
 
-const App = () => {
-  const fruits =  ["사과", "바나나", "체리"];
-
-  return (
-    <>
-      <h1>내가 좋아하는 과일은</h1>
-      <ul>
-        {fruits.map((item, i)=>(
-          <li key={i}>{item}</li>
-        ))}
-      </ul>
-    </>
-  )
-}
-export default App;
+// const App = () => {
+//   const fruits =  ["사과", "바나나", "체리", "망고", "오렌지", "포도"];
+//   const listItems = [];
+//   for(let i = 0; i < fruits.length; i++){
+//     listItems.push(<li key={i}>{fruits[i]}</li>)
+//   }
+//   return (
+//     <>
+//       <h1>내가 좋아하는 과일은</h1>
+//       {listItems}
+//     </>
+//   )
+// }
+// export default App;
